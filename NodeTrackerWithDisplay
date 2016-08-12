@@ -48,7 +48,7 @@ Adafruit_SSD1351 tft = Adafruit_SSD1351(cs, dc, mosi, sclk, rst);
 
 //SoftwareSerial btSerial(4,5); // Bluetooth Software Serial
 
-SoftwareSerial mySerial(D3, D2); //Initialize SoftwareSerial, and tell it you will be connecting through pins 2 and 3
+SoftwareSerial mySerial(D3, D4); //Initialize SoftwareSerial, and tell it you will be connecting through pins 2 and 3 Rx,Tx
 Adafruit_GPS GPS(&mySerial); //Create GPS object
 
 String NMEA1;  //We will use this variable to hold our first NMEA sentence
